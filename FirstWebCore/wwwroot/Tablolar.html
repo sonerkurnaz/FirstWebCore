@@ -1,0 +1,92 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+</head>
+<body>
+    <p>
+        Sayfa üzerinde bir takim verileri duzenli bir tablo formatında gösteren
+    </p>
+    <p>
+        Bazı özellikleri (Attributeleri)
+        <ul>
+            <li>Widht: Tablonun genişliğini belirler</li>
+            <li>Heigth: Tablonun yüksekligini belirler</li>
+            <li>Border: Tablonun iç ve dıs cercevelerini belirler</li>
+            <li>Cellspacing: Hücrelerin birbirine olan uzaklıgını belirler</li>
+            <li>Cellpadding: Hücrelerin içerisindeki degerlerin dıs cerceveye olan uzaklıgını belirler</li>
+            <li>Colspan: Hücrelerin birleştirilmesini sağlar</li>
+            <li>Rowspan: Satırların birleştirilmesini sağlar</li>
+            <li>Thead: Table head yani tablodaki baslıkların tanımlandıgı yerdir</li>
+            <li>Tbody: Table içersiinde goruncek veriler burda tanımlanır</li>
+        </ul>
+    </p>
+
+    <table width="100%" 
+           border="1" 
+           cellspacing="5" 
+           cellpadding="5"
+           >
+    
+        <tr>
+            <td>ADI</td>
+            <td>SOYADI</td>
+        </tr>
+        <tr>
+            <td>Ali</td>
+            <td>Yılmaz</td>
+        </tr>
+        <tr>
+            <td>Ayse</td>
+            <td>Kaya</td>
+        </tr>
+        <tr>
+            <td>Hasan</td>
+            <td>Gezer</td>
+        </tr>
+        <tr>
+            <td>Fatma</td>
+            <td>Yapıcı</td>
+        </tr>
+    </table>
+    <hr />
+    <table border="3" cellspacing="5" cellpadding="5">
+        <thead>
+           <tr>
+               <th>Adi</th>
+               <th>Soyadi</th>
+               <th>TCNO</th>
+               <!-- th td den farklı olarak veriyi ortalar  -->
+           </tr>
+            <tr>
+                <td colspan="3">
+                    <center>
+                        <strong>
+                            Bu tablo icersinde sınıf mevudu yeralmaktadır
+                        </strong>
+                    </center>
+                </td>
+            </tr> 
+        </thead>
+        <tbody>
+            <tr>
+                <td>Ali</td>
+                <td>Yılmaz</td>
+            </tr>
+            <tr>
+                <td>Ayse</td>
+                <td>Kaya</td>
+            </tr>
+            <tr>
+                <td>Hasan</td>
+                <td>Gezer</td>
+            </tr>
+            <tr>
+                <td>Fatma</td>
+                <td>Yapıcı</td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>
