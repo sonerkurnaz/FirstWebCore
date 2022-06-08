@@ -6,40 +6,47 @@
 </head>
 <body>
     <p>
-        Sayfa üzerinde bir takim verileri duzenli bir tablo formatında gösteren
+        Sayfa uzerinde bir takim verileri duzenli bir tablo formatinda gostermek icin <br />
+        "Table" elementi kullanilir. "tr (TableRow)" ve "td (table data)" en cok kullanilan child elementlerdir
     </p>
     <p>
-        Bazı özellikleri (Attributeleri)
+        Bazi Özellikleri (Attribute'leri')
         <ul>
-            <li>Widht: Tablonun genişliğini belirler</li>
-            <li>Heigth: Tablonun yüksekligini belirler</li>
-            <li>Border: Tablonun iç ve dıs cercevelerini belirler</li>
-            <li>Cellspacing: Hücrelerin birbirine olan uzaklıgını belirler</li>
-            <li>Cellpadding: Hücrelerin içerisindeki degerlerin dıs cerceveye olan uzaklıgını belirler</li>
-            <li>Colspan: Hücrelerin birleştirilmesini sağlar</li>
-            <li>Rowspan: Satırların birleştirilmesini sağlar</li>
-            <li>Thead: Table head yani tablodaki baslıkların tanımlandıgı yerdir</li>
-            <li>Tbody: Table içersiinde goruncek veriler burda tanımlanır</li>
+            <li>Width : Tablonun genişligini belirler</li>
+            <li>Heigth: Tablonun yuksekligini belirler</li>
+            <li>Border: Tablonun ic ve diş cercevelerini belirler</li>
+            <li>Cellspacing: Hücrelerin birbirine olan uzakligini belirler</li>
+            <li>
+                Cellpadding: Hücrelerin icerisindeki degerlerin diş cerceveye
+                olan uzakligini belirler
+            </li>
+            <li>Colspan: Hücrelerin birleştirilmesini saglar</li>
+            <li>Rowspan: Satirlarin birleştirilmesini saglar</li>
+            <li>Thead : Table Head yani tbablodaki başliklarin tanimlandigi yerdir</li>
+            <li>TBody : Table icerinde gorunecek veriler burada tanimlanir.</li>
+
+
         </ul>
     </p>
 
-    <table width="100%" 
-           border="1" 
-           cellspacing="5" 
+    <!--<table with="100%" border="5" cellspacing="5">-->
+    <table width="100%" border="1"
+           cellspacing="5"
            cellpadding="5"
-           >
-    
+           id="personelTablosu">
         <tr>
             <td>ADI</td>
             <td>SOYADI</td>
         </tr>
         <tr>
             <td>Ali</td>
-            <td>Yılmaz</td>
+            <td>Yilmaz</td>
+
         </tr>
         <tr>
             <td>Ayse</td>
             <td>Kaya</td>
+
         </tr>
         <tr>
             <td>Hasan</td>
@@ -47,36 +54,41 @@
         </tr>
         <tr>
             <td>Fatma</td>
-            <td>Yapıcı</td>
+            <td>Yapici</td>
         </tr>
     </table>
+
     <hr />
-    <table border="3" cellspacing="5" cellpadding="5">
+    <table border="1" cellspacing="5" cellpadding="5" id="ogrenciTablosu">
         <thead>
-           <tr>
-               <th>Adi</th>
-               <th>Soyadi</th>
-               <th>TCNO</th>
-               <!-- th td den farklı olarak veriyi ortalar  -->
-           </tr>
+            <tr>
+                <td>Adi</td>
+                <th>Soyadi</th>
+                <th>TCNO</th>
+                <!-- th  td den farkli olarak veriyi ortalar ve kalin yazar -->
+            </tr>
             <tr>
                 <td colspan="3">
                     <center>
                         <strong>
-                            Bu tablo icersinde sınıf mevudu yeralmaktadır
+                            Bu tablo icerisinde sinif mevcudu yeralmaktadir
                         </strong>
                     </center>
+
                 </td>
-            </tr> 
+            </tr>
         </thead>
+
         <tbody>
             <tr>
                 <td>Ali</td>
-                <td>Yılmaz</td>
+                <td colspan="2">Yilmaz</td>
+
             </tr>
             <tr>
                 <td>Ayse</td>
-                <td>Kaya</td>
+                <th>Kaya</th>
+
             </tr>
             <tr>
                 <td>Hasan</td>
@@ -84,7 +96,7 @@
             </tr>
             <tr>
                 <td>Fatma</td>
-                <td>Yapıcı</td>
+                <td>Yapici</td>
             </tr>
         </tbody>
     </table>
